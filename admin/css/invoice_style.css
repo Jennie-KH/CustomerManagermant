@@ -1,0 +1,11 @@
+#select_label {
+    padding: 2px;
+    margin-left: 4px;
+}
+
+@media screen and (max-width:600px) {
+    #select_type {
+        /* margin-top: 15px; */
+        margin-bottom: 20px;
+    }
+}
