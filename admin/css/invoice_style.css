@@ -3,9 +3,54 @@
     margin-left: 4px;
 }
 
-@media screen and (max-width:600px) {
+#date {
+    margin-right: -40px;
+}
+
+#Profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#select_product {
+    margin-left: 4px;
+}
+
+#icon_search {
+    top: 13px;
+    left: 1080px;
+}
+
+#product_boder {
+    border: 1px solid gainsboro;
+}
+
+
+/* #bg_customer {
+  background: rgb(20, 117, 184);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 117, 184, 1) 0%,
+    rgba(14, 92, 167, 1) 50%,
+    rgba(29, 147, 171, 1) 100%
+  );
+} */
+
+@media screen and (max-width: 600px) {
     #select_type {
         /* margin-top: 15px; */
         margin-bottom: 20px;
+    }
+    #icon_search {
+        top: 13px;
+        left: 350px;
     }
 }

@@ -13,8 +13,7 @@
                     <div class=" position-relative">
                         <i class="fa fa-search position-absolute top-0 " id="icon_search" aria-hidden="true"></i>
                     </div>
-                    <input type="text" class="form-control " placeholder="Search Customer Name ...."
-                        name="cutomer_name">
+                    <input type="text" class="form-control " placeholder="Search Customer Name ...." name="cutomer_name">
                 </div>
                 <div class="col-sm-12 mt-2">
 
@@ -30,7 +29,6 @@
                                     <th>Phone Number</th>
                                     <th>Type</th>
                                     <th>Date</th>
-                                    <th>Due Date</th>
                                     <th>Status</th>
                                     <th>Option</th>
 
@@ -42,7 +40,6 @@
                                     <th>Phone Number</th>
                                     <th>Type</th>
                                     <th>Date</th>
-                                    <th>Due Date</th>
                                     <th>Status</th>
                                     <th>Option</th>
 
@@ -63,19 +60,19 @@
                                     <td>
                                         <div class=" p-2 shadow" id="product_boder">2023/09/03</div>
                                     </td>
-                                    <td>
-                                        <div class=" p-2 shadow" id="product_boder">2023/09/05</div>
-                                    </td>
+
                                     <td>
                                         <div class=" p-2 shadow" id="product_boder">paid</div>
                                     </td>
                                     <td>
-                                        <a href="" name="edit"><i class="fa fa-edit text-primary" aria-hidden="true"></i></a>
-                                        <a href="" name="delete"><i class="fa fa-comment text-success" aria-hidden="true"></i></a>
-                                        <a href="" name="comm"><i class="fa fa-trash text-danger"  aria-hidden="true"></i></a>
-                                        <a href="" name="pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-
-
+                                        <a href="" name="edit"><i class="fa fa-edit text-primary"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" name="delete"><i class="fa fa-comment text-success"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" name="comm"><i class="fa fa-trash text-danger"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" name="pdf"><i class="fa fa-file-pdf-o"
+                                                aria-hidden="true"></i></a>
                                     </td>
                                 </tr>
 

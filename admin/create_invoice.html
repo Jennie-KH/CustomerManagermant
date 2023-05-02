@@ -9,11 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Buttons</title>
+    <title>SB Admin 2 - Dashboard</title>
     <!-- Link FontAsome Version 4.7-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -44,7 +43,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -59,7 +58,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa fa-file-text" aria-hidden="true"></i>
                     <span>Invoice</span>
@@ -69,35 +68,74 @@
                         <a class="collapse-item" href="create_invoice.html"><i class="fa fa-plus" aria-hidden="true"></i> Create Invoice</a>
                         <a class="collapse-item" href="manage_invoice.html"><i class="fa fa-cog" aria-hidden="true"></i></i> Manage Invoice</a>
 
+                    </div>
+                </div>
+            </li>
 
-                        <!-- Nav Item - Pages Collapse Menu -->
+            <!-- Nav Item - Customer Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCustomer" aria-expanded="true" aria-controls="collapseCustomer">
+                    <i class="fas fa-user"></i>
+                    <span>Customer</span>
+                </a>
+                <div id="collapseCustomer" class="collapse" aria-labelledby="headingCustomer" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Create Customer:</h6>
+                        <a class="collapse-item" href="Customer_Create.html">Create Customer</a>
+                        <a class="collapse-item" href="Customer_manage.html">Manage Customer</a>
+                    </div>
+                </div>
+            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-                                <i class="fas fa-fw fa-folder"></i>
-                                <span>Pages</span>
-                            </a>
-                            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                                <div class="bg-white py-2 collapse-inner rounded">
-                                    <h6 class="collapse-header">Login Screens:</h6>
-                                    <a class="collapse-item" href="login.html">Login</a>
-                                    <a class="collapse-item" href="register.html">Register</a>
-                                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                                    <div class="collapse-divider"></div>
-                                    <h6 class="collapse-header">Other Pages:</h6>
-                                    <a class="collapse-item" href="404.html">404 Page</a>
-                                    <a class="collapse-item" href="blank.html">Blank Page</a>
-                                </div>
-                            </div>
-                        </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
-                        <!-- Divider -->
-                        <hr class="sidebar-divider d-none d-md-block">
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
 
-                        <!-- Sidebar Toggler (Sidebar) -->
-                        <div class="text-center d-none d-md-inline">
-                            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-                        </div>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+            </div>
 
         </ul>
         <!-- End of Sidebar -->
@@ -150,6 +188,7 @@
                                 </form>
                             </div>
                         </li>
+
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -181,12 +220,14 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid ">
+                    <div class="container ">
+                        <h1 class=" text-primary">Create New Invoice</h1>
+                    </div>
 
-                    <h1 class=" text-primary">Create New Invoice</h1>
                     <!-- Form Create Invoice -->
                     <div class="container d-block shadow-lg p-3">
                         <form action="/action_page.php">
-                            <div class="row d-flex justify-content-center">
+                            <!-- <div class="row d-flex justify-content-center">
                                 <div class=" col-sm-6 "></div>
                                 <div class=" col-sm-6  form-inline" id="select_type">
                                     <label for="" id="select_label" name="customer_type" class=" font-weight-bold">Select Type: </label>
@@ -196,143 +237,172 @@
                                         <option value="sent ">sent</option>
                                     </select>
                                 </div><br><br><br>
-                            </div>
-                            <div class="row ">
-                                <div class="col-sm-6 ">
-                                    <button id="button" class="btn btn-primary  ">Customer Information </button> <br><br>
-                                    <input type="text " class="form-control " id="customer_name " placeholder="Enter Name " name="customer_name "><br>
-                                    <input type="text " class="form-control " id="customer_number " placeholder="Enter Phone Number " name="customer_number "><br>
-                                    <input type="text " class="form-control " id="customer_type " placeholder="Enter Type of bussiness " name="customer_type "><br>
-                                </div>
+                            </div> -->
+                            <div class="col ">
 
-                                <div class="col-sm-6 ">
-                                    <div class="d-flex ">
+
+                                <div class="col-sm-6  form-inline">
+
+
+                                    <!-- <div class="d-flex ">
                                         <div class="col-6 "> <input type="date" class="form-control " placeholder="Enter First Date " name="invoice_date"></div>
                                         <div class="col-6 "> <input type="date" class="form-control " placeholder="Enter Due date " name="invoice_due_name"></div>
                                     </div><br>
                                     <input type="text " class="form-control " placeholder="Enter Email " name="customer_email "><br>
                                     <input type="text " class="form-control " id="customer_address " placeholder="Enter Address " name="customer_address "><br>
                                     <input type="text " class="form-control " id="customer_phy_address " placeholder="Enter Physical Address " name="customer_phy_address "><br>
+                                </div> -->
                                 </div>
                             </div>
-                        </form><br>
-                        <!-- Form Product-->
-                        <form action="/action_page.php ">
-                            <button class="btn btn-primary  ">Add Product </button> <a href="#">or select Product</a> <br><br>
+
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text " class="form-control  " id="product_name " placeholder="Enter Product Name " name="product_name "><br>
-                                    <input type="text " class="form-control  " id="product_description " placeholder="Enter Description " name="product_description ">
-                                    <br>
+                                <div class="col-sm-6 ">
+                                    <!-- <button id="button" class="btn btn-primary  ">Customer Information </button> <br><br> -->
+                                    <label for="" id="select_label" name="customer_type" class=" font-weight-bold">Customer: </label>
+                                    <select class="custom-select " id="inputGroupSelect01 " name="Customer_Name">
+                                    <option value="1" action>Customer-1</option>
+                                    <option value="2">Customer-2</option>
+                                    <option value="2">Customer-3</option>
+                                </select>
                                 </div>
-                                <div class="col-sm-6 d-flex">
-                                    <div class="col-4"><input type="text " class="form-control  " id="product_qty " placeholder="Quantity" name="product_qty "></div>
-                                    <div class="col-4"><input type="text " class="form-control  " id="product_price " placeholder="Price" name="product_price "></div>
-                                    <div class="col-4">
-                                        <select class="custom-select" name="product_discount" id="inputGroupSelect01 ">
-                                        <option value="10" action>10</option>
-                                        <option value="20">20</option>
-                                        <option value="25">30</option>
-                                    </select>
+                                <div class="col-sm-6 ">
+                                    <!-- <button id="button" class="btn btn-primary  ">Customer Information </button> <br><br> -->
+                                    <label for="" id="select_label" name="customer_type" class=" font-weight-bold">Select Type: </label>
+                                    <select class="custom-select " id="inputGroupSelect01 " name="Customer_Name">
+                                    <option value="Paid" action>Piad</option>
+                                    <option value="Overdue">Overdue</option>
+                                    <option value="Send">Send</option>
+                                </select>
+                                </div><br>
+                            </div>
+                            <div class="row">
+
+                                <div class=" col-sm-12 mt-3">
+                                    <div class=" position-relative">
+                                        <i class="fa fa-search position-absolute top-0 " id="icon_search" aria-hidden="true"></i>
+                                    </div>
+                                    <input type="text" class="form-control " placeholder="Search Product Or Service ...." name="invoice_date">
+                                </div>
+                                <div class="col-sm-12 mt-2">
+                                    <div class="table-responsive">
+
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr class="">
+                                                    <th>Product or Service </th>
+                                                    <th>Quantity</th>
+                                                    <th>Unit Price</th>
+                                                    <th>Amount</th>
+                                                    <th>Option</th>
+                                                </tr>
+                                            </thead>
+                                            <tfoot>
+                                                <tr>
+                                                    <th>Product or Service </th>
+                                                    <th>Quantity</th>
+                                                    <th>Unit Price</th>
+                                                    <th>Amount</th>
+                                                    <th>Option</th>
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
+                                                <tr>
+
+                                                    <td>
+                                                        <div class=" p-2 shadow" id="product_boder">Product-1</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class=" p-2 shadow" id="product_boder">78</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class=" p-2 shadow" id="product_boder">100</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class=" p-2 shadow" id="product_boder">7800</div>
+                                                    </td>
+                                                    <td>
+
+                                                        <button class="btn btn-danger"> Remove</button>
+                                                        <button class="btn btn-primary">Edit </button>
+                                                    </td>
+                                                </tr>
+
+
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-
                             </div>
+                            <button class="btn btn-primary" name="btn_invoice">Create Invoice</button>
+                        </form><br>
 
-                            <button type="submit " class="btn btn-primary mt-3 ">Create Invoice</button>
-                        </form>
-                        <!--Sub Total-->
-                        <div class="row d-flex justify-content-center">
 
-                            <div class=" col-sm-6"></div>
-                            <div class=" col-sm-6">
-                                <div class="d-flex">
-                                    <label class="col-sm-3">Sub Total:</label>
-                                    <div class="col-sm-9"> <input type="text " class="form-control  " id="customer_name " name="customer_name "></div>
-                                </div><br>
-                                <div class="d-flex">
-                                    <label class="col-sm-3">Discount:</label>
-                                    <div class="col-sm-9"> <input type="text " class="form-control  " id="customer_name " name="customer_name "></div>
-                                </div>
-                                <hr>
-                                <div class="d-flex">
-                                    <label class="col-sm-3">Total:</label>
-                                    <div class="col-sm-9"> <input type="text " class="form-control  " id="customer_name " name="customer_name "></div>
-                                </div>
-                            </div>
+
+                        <!-- /.container-fluid -->
+
+
+                    </div><br><br><br><br><br>
+                    <!-- /.container-fluid -->
+
+                </div>
+                <!-- End of Main Content -->
+
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2021</span>
                         </div>
-
                     </div>
-                </div>
-                <!-- /.container-fluid -->
+                </footer>
+                <!-- End of Footer -->
 
-
-            </div><br><br><br><br><br>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white ">
-                <div class="container my-auto ">
-                    <div class="copyright text-center my-auto ">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
+            </div>
+            <!-- End of Content Wrapper -->
 
         </div>
         <!-- End of Page Wrapper -->
 
         <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded " href="#page-top ">
-            <i class="fas fa-angle-up "></i>
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
         </a>
 
         <!-- Logout Modal-->
-        <div class="modal fade " id="logoutModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-            <div class="modal-dialog " role="document ">
-                <div class="modal-content ">
-                    <div class="modal-header ">
-                        <h5 class="modal-title " id="exampleModalLabel ">Ready to Leave?</h5>
-                        <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
-                        <span aria-hidden="true ">×</span>
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
                     </button>
                     </div>
-                    <div class="modal-body ">Select "Logout " below if you are ready to end your current session.</div>
-                    <div class="modal-footer ">
-                        <button class="btn btn-secondary " type="button " data-dismiss="modal ">Cancel</button>
-                        <a class="btn btn-primary " href="login.html ">Logout</a>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js "></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js "></script>
+        <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
-
-</html>
-<!-- Bootstrap core JavaScript-->
-<script src="vendor/jquery/jquery.min.js "></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
-
-<!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js "></script>
-
-<!-- Custom scripts for all pages-->
-<script src="js/sb-admin-2.min.js "></script>
-
-</body>
-
-</html>
